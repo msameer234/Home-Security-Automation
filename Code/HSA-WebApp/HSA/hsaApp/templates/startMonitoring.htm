@@ -1,0 +1,18 @@
+{% extends 'index.htm' %}
+{% load staticfiles %}
+
+  
+        {% block monitor %}
+	<div method="POST" action='' style="height:50px; width:300px; backgroung-color:blue; align="center">
+            <form method="POST" action=''>{% csrf_token %}     				
+                <div>	
+                    Monitoring Mode:
+                    <input type="radio" name="mmradio" id="mmradio1" value="On" selected="True">ON
+                    <input type="radio" name="mmradio" id="mmradio2" value="Off">OFF
+                    <input type="submit" name"submit" value="Submit">
+                </div>            	
+            </form>
+	</div>
+        {% endblock %}
+
+        

@@ -1,0 +1,11 @@
+{% extends 'capimgrecvid.htm' %}
+
+{% block main%}
+<form method="POST" action=''>{% csrf_token %}
+  <div class="form-group">
+    <label>Enter video length:(Seconds)</label>
+    <input type="text" class="form-control" id="vidlen" name="vidlen" placeholder="Video lenth in seconds">
+  </div>
+  <button type="submit" class="btn btn-primary">Record</button>
+</form>
+{% endblock %}

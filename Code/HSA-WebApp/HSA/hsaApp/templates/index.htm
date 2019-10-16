@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block main %}
+    {% block monitor %}
+    <p class="lead">
+      <a href="{% url 'Monitoring' %}" class="btn btn-lg btn-success">Start Monitoring</a>
+      <h5>{{status}}</h5>
+    </p>
+    {% endblock %}
+{% endblock %}
+
+
+
