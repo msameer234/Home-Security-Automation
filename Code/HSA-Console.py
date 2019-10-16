@@ -19,8 +19,8 @@ from email.mime.base import MIMEBase
 from email import encoders
 from email.mime.image import MIMEImage
 
-fromaddr = "samirmalik570@gmail.com"
-toaddr = "samirmalik570@gmail.com"
+fromaddr = "YourEmail" # change this 
+toaddr = "YourEmail" # cahange this
 
 mail = MIMEMultipart()
 
@@ -64,7 +64,7 @@ def sendMail(data):
     mail.attach(image)
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login(fromaddr,"Samstag@000")
+    server.login(fromaddr,"YourPassword") # Change this.. Will login to your email to send an email..
     text = mail.as_string()
     server.sendmail(fromaddr,toaddr,text)
     print("Image Sent..!!!")
